@@ -25,6 +25,11 @@ body {
   transition: transform 0.5s;
 }
 
+/* This part will make the writing zoom in a tiny bit to add dynamic movement */
+.fixed-nav .site-wrap {
+  transform: scale(1);
+}
+
 header {
   text-align: center;
   height: 50vh;
@@ -73,12 +78,18 @@ nav li {
 }
 
 li.logo {
+  /* the next two properties hide the logo out of site as a default */
   max-width: 0;
   overflow: hidden;
   background: white;
-  transition: all .5s;
+  transition: all 0.5s; /* is activated when fixed-nav style is activated */
   font-weight: 600;
   font-size: 30px;
+}
+
+/*style to make logo appear when we scroll down */
+.fixed-nav li.logo {
+  max-width: 500px; /*This is actually a lot wider than the logo will ever be but it activates the transition above */
 }
 
 li.logo a {

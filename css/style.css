@@ -50,6 +50,13 @@ nav {
   z-index: 1;
 }
 
+/* This bit fixes the nav in place; NOTE: when you make an element fixed in CSS it no longer takes up space in the document so the other 
+  bits and pieces will float up the amount of pixel height of the element you fixed*/
+.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px rgba(5, 5, 5, 0.1);
+}
+
 nav ul {
   margin: 0;
   padding:0;

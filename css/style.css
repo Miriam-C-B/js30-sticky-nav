@@ -78,7 +78,7 @@ nav li {
 }
 
 li.logo {
-  /* the next two properties hide the logo out of site as a default */
+  /* the next two properties hide the logo out of side as a default */
   max-width: 0;
   overflow: hidden;
   background: white;
